@@ -1,3 +1,5 @@
+PS: Application development is still in progress, stay tuned....
+
 URL Shortener Application
 This is a URL shortener application built using Java and React. It provides a simple and efficient way to shorten long URLs into shorter, more manageable links. The application consists of two main components: a backend server written in Java and a frontend user interface developed with React.
 
@@ -68,4 +70,5 @@ React
 Create React App
 axios
 Contact
-If you have any questions or suggestions, feel free to contact me at your-email@example.com.
+If you have any questions or suggestions, feel free to contact me at amanvaidya700@gmail.com
+
