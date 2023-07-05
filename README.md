@@ -62,7 +62,7 @@ Contributing<br>
 Contributions are welcome! If you find any bugs or want to enhance the application, please submit an issue or create a pull request. Make sure to follow the existing code style and provide clear commit messages.<br>
 
 License<br>
-This project is licensed under the MIT License. You can find more details in the <a href="https://github.com/amanvaidya/urlShortner/blob/main/src/main/resources/License">LICENSE</a> file.<br>
+This project is licensed under the MIT License. You can find more details in the <a href="https://github.com/amanvaidya/urlShortner/blob/main/License">LICENSE</a> file.<br>
 
 Acknowledgements<br>
 Spring Boot<br>
