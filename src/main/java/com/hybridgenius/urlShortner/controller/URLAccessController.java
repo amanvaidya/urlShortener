@@ -1,13 +1,11 @@
-package com.example.urlShortner.controller;
+package com.hybridgenius.urlShortner.controller;
 
-import com.example.urlShortner.dto.URLShortnerDto;
-import com.example.urlShortner.service.URLAccessService;
+import com.hybridgenius.urlShortner.dto.URLShortnerDto;
+import com.hybridgenius.urlShortner.service.URLAccessService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
-import java.io.IOException;
-import java.net.URISyntaxException;
 
 @RestController
 public class URLAccessController {

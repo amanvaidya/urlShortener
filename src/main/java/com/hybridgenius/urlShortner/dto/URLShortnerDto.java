@@ -1,4 +1,4 @@
-package com.example.urlShortner.dto;
+package com.hybridgenius.urlShortner.dto;
 
 public class URLShortnerDto {
     private  String url = null;

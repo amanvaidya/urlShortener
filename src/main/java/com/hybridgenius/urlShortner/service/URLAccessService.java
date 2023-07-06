@@ -1,6 +1,6 @@
-package com.example.urlShortner.service;
+package com.hybridgenius.urlShortner.service;
 
-import com.example.urlShortner.dto.URLShortnerDto;
+import com.hybridgenius.urlShortner.dto.URLShortnerDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import java.io.IOException;
