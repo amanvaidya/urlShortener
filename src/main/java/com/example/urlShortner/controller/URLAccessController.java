@@ -4,7 +4,8 @@ import com.example.urlShortner.dto.URLShortnerDto;
 import com.example.urlShortner.service.URLAccessService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.view.RedirectView;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
@@ -19,7 +20,10 @@ public class URLAccessController {
     }
 
     @GetMapping("{url}")
-    public void redirectUrl(@PathVariable String url) throws IOException, URISyntaxException {
-        urlAccessService.redirectUrl(url);
+    public ModelAndView redirectUrl(@PathVariable String url){
+        String originalUrl = urlAccessService.decodeUrl(url);
+        RedirectView redirectView = new RedirectView();
+        redirectView.setUrl(originalUrl);
+        return new ModelAndView(redirectView);
     }
 }
