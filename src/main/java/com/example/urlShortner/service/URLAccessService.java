@@ -1,6 +1,7 @@
 package com.example.urlShortner.service;
 
 import com.example.urlShortner.dto.URLShortnerDto;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.util.HashMap;
@@ -9,11 +10,14 @@ import java.util.HashMap;
 public class URLAccessService {
     HashMap<String, String> map = new HashMap<>();
     int size = map.size();
+    @Value("${app.url.domain}")
+    private String shortUrl;
+
     public String encodeUrl(URLShortnerDto urlShortnerDto){
         String url = urlShortnerDto.getUrl();
         String alias = urlShortnerDto.getAlias();
         if(alias == null){
-            alias = "myUrl"+size;
+            alias = shortUrl+size;
         }
         map.put(alias, url);
         size++;

@@ -6,10 +6,10 @@ This is a URL shortener application built using Java and React. It provides a si
 Features:<br>
 Shorten long URLs into shorter, more concise links<br>
 Redirect users to the original URL when they visit the shortened link<br>
+Customizable URLs with optional vanity tags<br>
 Road Map:<br>
 Track the number of clicks and other analytics for each shortened URL<br>
 User registration and authentication system<br>
-Customizable URLs with optional vanity tags<br>
 QR code generation for shortened URLs<br>
 
 Technologies Used<br>
