@@ -12,22 +12,22 @@ This is a URL shortener application built using Java and React. It provides a si
 2. QR code generation for shortened URLs<br>
 
 ## Technologies Used<br>
-    Backend<br>
-    Java 8<br>
-    Spring Boot<br>
-    Getting Started<br>
+    Backend
+    Java 8
+    Spring Boot
+    Getting Started
 
 To set up the URL shortener application on your local machine, please follow these instructions:<br>
 
 ## Prerequisites<br>
-    Java Development Kit (JDK) 8 or higher<br>
-    Backend Setup<br>
+    Java Development Kit (JDK) 8 or higher
+    Backend Setup
 
 ## Clone this repository to your local machine.<br>
-    Copy code<br>
-    git clone https://github.com/amanvaidya/urlShortner.git<br>
-    Open the backend folder in your preferred Java IDE.<br>
-    Run the application.<br>
+    Copy code
+    git clone https://github.com/amanvaidya/urlShortner.git
+    Open the backend folder in your preferred Java IDE.
+    Run the application.
 
 ## Contributing<br>
 Contributions are welcome! If you find any bugs or want to enhance the application, please submit an issue or create a pull request. Make sure to follow the existing code style and provide clear commit messages.<br>
