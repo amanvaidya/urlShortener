@@ -36,5 +36,5 @@ Contributions are welcome! If you find any bugs or want to enhance the applicati
 This project is licensed under the MIT License. You can find more details in the <a href="https://github.com/amanvaidya/urlShortner/blob/main/License">LICENSE</a> file.<br>
 
 ## Contact 
-    If you have any questions or suggestions, feel free to contact me at amanvaidya700@gmail.com
+If you have any questions or suggestions, feel free to contact me at amanvaidya700@gmail.com
 
