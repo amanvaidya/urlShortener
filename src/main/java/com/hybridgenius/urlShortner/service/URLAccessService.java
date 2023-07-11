@@ -3,7 +3,6 @@ package com.hybridgenius.urlShortner.service;
 import com.hybridgenius.urlShortner.dto.URLShortnerDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import java.io.IOException;
 import java.util.HashMap;
 
 @Service
