@@ -8,8 +8,9 @@ import java.util.HashMap;
 
 @Service
 public class URLAccessService {
-    HashMap<String, String> map = new HashMap<>();
-    int size = map.size();
+    HashMap<String, String> urlMap = new HashMap<>();
+    HashMap<String, Integer> clickMap = new HashMap<>();
+    int size = urlMap.size();
     @Value("${app.url.domain}")
     private String shortUrl;
 
@@ -19,18 +20,24 @@ public class URLAccessService {
         if(alias == null){
             alias = shortUrl+size;
         }
-        map.put(alias, url);
+        urlMap.put(alias, url);
         size++;
         return alias;
     }
 
     public String decodeUrl(String url){
-        String actualUrl = map.get(url);
+        String actualUrl = urlMap.get(url);
+        updateURLClicks(url);
         return actualUrl;
     }
 
-    public String redirectUrl(String url) throws IOException {
-        String actualUrl = decodeUrl(url);
-        return actualUrl;
+    private void updateURLClicks(String url){
+        if(clickMap.containsKey(url)){
+            int click = clickMap.get(url);
+            clickMap.put(url, click+1);
+        }else{
+            clickMap.put(url, 1);
+        }
     }
+
 }
