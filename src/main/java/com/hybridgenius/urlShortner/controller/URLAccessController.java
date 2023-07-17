@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @RestController
@@ -29,11 +30,10 @@ public class URLAccessController {
     }
 
     @GetMapping("{url}")
-    public ModelAndView redirectUrl(@PathVariable String url) {
+    public void redirectUrl(@PathVariable String url, HttpServletResponse response) {
         String originalUrl = urlAccessService.decodeUrl(url);
-        RedirectView redirectView = new RedirectView();
-        redirectView.setUrl(originalUrl);
-        return new ModelAndView(redirectView);
+        response.setStatus(HttpServletResponse.SC_FOUND);
+        response.setHeader("Location", originalUrl);
     }
 
     @GetMapping(value = "qrCode/{shortenedUrl}")
