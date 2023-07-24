@@ -1,17 +1,15 @@
-package com.hybridgenius.urlShortner.controller;
+package com.hybridgenius.urlShortener.controller;
 
 import com.google.zxing.WriterException;
-import com.hybridgenius.urlShortner.dto.URLShortnerDto;
-import com.hybridgenius.urlShortner.service.QRCodeGenerator;
-import com.hybridgenius.urlShortner.service.URLAccessService;
+import com.hybridgenius.urlShortener.dto.URLShortenerDto;
+import com.hybridgenius.urlShortener.service.QRCodeGenerator;
+import com.hybridgenius.urlShortener.service.URLAccessService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.view.RedirectView;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -25,8 +23,8 @@ public class URLAccessController {
     private QRCodeGenerator qRCodeGenerator;
 
     @PostMapping("/encode")
-    public String encodeUrl(@RequestBody URLShortnerDto urlShortnerDto) {
-        return urlAccessService.encodeUrl(urlShortnerDto);
+    public String encodeUrl(@RequestBody URLShortenerDto urlShortenerDto) {
+        return urlAccessService.encodeUrl(urlShortenerDto);
     }
 
     @GetMapping("{url}")

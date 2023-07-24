@@ -1,4 +1,4 @@
-package com.hybridgenius.urlShortner.service;
+package com.hybridgenius.urlShortener.service;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;

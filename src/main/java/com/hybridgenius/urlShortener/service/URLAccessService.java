@@ -1,6 +1,6 @@
-package com.hybridgenius.urlShortner.service;
+package com.hybridgenius.urlShortener.service;
 
-import com.hybridgenius.urlShortner.dto.URLShortnerDto;
+import com.hybridgenius.urlShortener.dto.URLShortenerDto;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import java.util.HashMap;
@@ -13,9 +13,9 @@ public class URLAccessService {
     @Value("${app.url.domain}")
     private String shortUrl;
 
-    public String encodeUrl(URLShortnerDto urlShortnerDto){
-        String url = urlShortnerDto.getUrl();
-        String alias = urlShortnerDto.getAlias();
+    public String encodeUrl(URLShortenerDto urlShortenerDto){
+        String url = urlShortenerDto.getUrl();
+        String alias = urlShortenerDto.getAlias();
         if(alias == null){
             alias = shortUrl+size;
         }

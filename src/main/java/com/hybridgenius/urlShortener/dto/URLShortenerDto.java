@@ -1,6 +1,6 @@
-package com.hybridgenius.urlShortner.dto;
+package com.hybridgenius.urlShortener.dto;
 
-public class URLShortnerDto {
+public class URLShortenerDto {
     private  String url = null;
     private String alias = null;
 
