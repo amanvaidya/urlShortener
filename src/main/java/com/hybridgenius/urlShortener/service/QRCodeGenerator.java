@@ -18,11 +18,11 @@ import java.util.Map;
 @Service
 public class QRCodeGenerator {
     public byte[] generateQRCodeBytes(String text) throws IOException, WriterException {
-        int width = 300; // QR code width in pixels
-        int height = 300; // QR code height in pixels
+        int width = 300;
+        int height = 300;
 
         Map<EncodeHintType, Object> hints = new HashMap<>();
-        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L); // Error correction level
+        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
         QRCodeWriter qrCodeWriter = new QRCodeWriter();
         BitMatrix bitMatrix = qrCodeWriter.encode(text, BarcodeFormat.QR_CODE, width, height, hints);
 
